@@ -11,3 +11,10 @@ In es_dt_codebase directory, we can find our implementation of the three aforeme
 ## Directory *data*
 
 Here in this directory, we can find results of the experiments. This means trained models, log files, plots, and videos of the trained models in action. There are two subdirectories, *main_experiments_data* and *case_studies_data*. In the first, we can find the data for the main experiments performed, while in the second there are data of a few experiments helping us set some hyperparameters.
+
+The individual experiments are named according to the following pattern:
+> [algorithm]\_[agent_type]\_[environment]\_[optional_specification]
+> - *algorithm* -> "es" / "ns" / "qd"
+> - *agent_type* -> "dt" / "ff"
+> - *environment* -> "humanoid"
+> - *optional_specification* -> e.g. "pretrained", to denote a seeding by a pretrained agent at the beginning of the training
