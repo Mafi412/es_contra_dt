@@ -19,7 +19,7 @@ class ALEAtariWrapper(EsEnvironmentWrapper):
     
     @property
     def state_shape(self):
-        return (self.env.window, 84, 84)
+        return (1, self.env.window, 84, 84)
     
     @property
     def timestep_limit(self):
