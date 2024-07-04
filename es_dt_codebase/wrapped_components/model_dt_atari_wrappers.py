@@ -125,7 +125,7 @@ def get_new_wrapped_dt_for_ale_environment(
     **kwargs
 ):
     return get_new_wrapped_dt(
-        (env.window, 84, 84),
+        (1, env.window, 84, 84),
         target_return,
         sample_action,
         env.action_space.n,
